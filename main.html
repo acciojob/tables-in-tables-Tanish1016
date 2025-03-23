@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,75 +7,80 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <table border= "1" id="tabl"  style="width: 400px; height:300px">
-		<tr>
-			<td>
-      <table border ="1" style="width:100%; height:20% ">
-		  <thead>
-			  <tr >
-				  <th colspan="2">Nested Table 2</th>
-			  </tr>
-		  </thead>
-		  <tbody>
-			  <tr>
-				  <th>Column 1</th>
-				  <th>COlumn 2</th>
-			  </tr>
-			  <tr>
-				  <td>abc</td>
-				  <td>def</td>
-			  </tr>
-		  </tbody>
-	  </table>
-			</td>
-			<td>
-		<table border ="1" style="width:100%;height:50%">
-			<thead>
-				<tr>
-					<th>Nested table 1</th>
-				</tr>
-			</thead>
-			<tbody>
-			<tr>
-				<td>
-				 <ul >
-					<li style="padding-left:40px"> List item</li>
-					 <li style="padding-left:40px"> List item</li>
-					 <li style="padding-left:40px"> List item</li>
-				</ul>
-				</td>
-			</tr>
-			</tbody>
-		</table>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				 <table border ="1" style="width:100%; height:20% ">
-		  <thead>
-			  <tr >
-				  <th colspan="2">Nested Table 3</th>
-			  </tr>
-		  </thead>
-		  <tbody>
-			   
-			  <tr>
-				  <td><a href="#tabl">Nested Table</td>
-				  <td>Demo Continued</td>
-			  </tr>
-		  </tbody>
-	  </table> 
-			</td>
-			<td>
-				<table border="1" style="width:100%;height:50%">
-					<tr>
-						<th>Nested Table 4</th>
-					</tr>
-					<td style="background-color:black;color:white">HTML </td>
-					</tr>
-				</table>
-			</td>
-		</tr>
+    <table border="1" id="tabl" style="width: 400px; height: 300px">
+      <tr>
+        <td>
+          <table border="1" style="width: 100%; height: 20%">
+            <thead>
+              <tr>
+                <th colspan="2">Nested Table 2</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Column 1</th>
+                <th>Column 2</th> <!-- ✅ Changed from <td> to <th> -->
+              </tr>
+              <tr>
+                <td>abc</td>
+                <td>def</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td>
+          <table border="1" style="width: 100%; height: 50%">
+            <thead>
+              <tr>
+                <th>Nested Table 1</th> <!-- ✅ Ensure "Nested Table 1" is in <th> -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <ul>
+                    <li style="padding-left: 40px">List item</li>
+                    <li style="padding-left: 40px">List item</li>
+                    <li style="padding-left: 40px">List item</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table border="1" style="width: 100%; height: 20%">
+            <thead>
+              <tr>
+                <th colspan="2">Nested Table 3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="#tabl">Nested Table</a></td>
+                <td>Demo Continued</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td>
+          <table border="1" style="width: 100%; height: 50%">
+            <thead>
+              <tr>
+                <th>Nested Table 4</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="background-color: black; color: white">HTML</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
     </table>
   </body>
 </html>
+
